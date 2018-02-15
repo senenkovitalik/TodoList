@@ -1,0 +1,11 @@
+type Task {
+  id: ID! @unique
+  name: String!
+  status: TaskStatus! @default(value: "ACTIVE")
+  createdAt: DateTime!
+}
+
+enum TaskStatus {
+  ACTIVE
+  COMPLETED
+}

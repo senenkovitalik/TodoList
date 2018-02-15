@@ -1,0 +1,13 @@
+# import Task, TaskStatus, BatchPayload, TaskUpdateInput, TaskWhereInput from "./generated/prisma.graphql"
+
+type Query {
+  tasks: [Task!]
+}
+
+type Mutation {
+  createTask(name: String!): Task
+  deleteTask(id: ID!): Task
+  deleteManyTasks(id_in: [ID!]): BatchPayload
+  changeStatus(id: ID!, status: TaskStatus): Task
+  updateTaskStatus(data: TaskUpdateInput!, where: TaskWhereInput!): BatchPayload!
+}

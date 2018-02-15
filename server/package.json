@@ -1,0 +1,12 @@
+{
+  "name": "todo-app",
+  "dependencies": {
+    "graphql-yoga": "^1.2.4",
+    "prisma-binding": "^1.5.7"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "npm start | npm run playground",
+    "playground": "graphql playground"
+  }
+}

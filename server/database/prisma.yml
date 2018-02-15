@@ -1,0 +1,11 @@
+service: todo
+stage: dev
+
+datamodel: datamodel.graphql
+
+schema: "src/generated/prisma.graphql"
+
+# to enable auth, provide
+secret: veryStr0ngP@ssword
+disableAuth: false
+cluster: public-gloryburn-15/prisma-eu1
